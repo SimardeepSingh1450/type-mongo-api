@@ -23,7 +23,7 @@ class PostController implements Controller{
     }
 
     private create = async (req: Request, res: Response, next: NextFunction): Promise<Response | void> => {
-        console.log(req.body);
+        console.log(req);
         try{
             const {title, body} = req.body;
             
